@@ -1,10 +1,13 @@
 {
-  "name": "m2024",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "editor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -22,8 +25,5 @@
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.15.0",
     "vite": "^6.0.1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
