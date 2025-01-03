@@ -1,32 +1,15 @@
-import { useState } from 'react'
+import CoreRender from './containers/render';
 
 import './App.css'
 
-import { Button } from "@/components/ui/button"
-
-
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-      <Button>Click me</Button>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  return (<>
+  <header>header</header>
+    <main>
+      <CoreRender />
+    </main>
+  </>
+ )
 }
 
 export default App
